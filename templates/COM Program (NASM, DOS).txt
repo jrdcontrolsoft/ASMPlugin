@@ -1,0 +1,7 @@
+section .code
+org 100h
+start:
+	; Hier Programmcode einfügen
+
+	mov ax, 4C00h
+	int 21h

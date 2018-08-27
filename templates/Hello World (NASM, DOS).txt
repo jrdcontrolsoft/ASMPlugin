@@ -1,0 +1,19 @@
+section .stack stack
+	resb 0100h
+	stacktop:
+section .data
+msg db 'Hello World!',13,10,'$'	;Text inkl. Zeilenumbruch
+section .code
+..start:						;Programmstart (die zwei Punkte vor "start", sagen NASM das hier der Einstiegspunkt ist)
+	mov ax, data				;Extraladen vom Datensegment
+	mov ds, ax					;Initialisierung des Datensegmentregisters mit der Adresse des Codesegmentes
+	mov ax, stack
+	mov ss, ax
+	mov sp, stacktop
+
+	mov dx, msg					;Adresse von msg auf dx legen
+	mov ah, 09h					;Funktion 9 gibt Zeichenkette aus
+	int 21h						;Funktion ausführen
+
+	mov ax, 4C00h				;Programmende mit Errorcode 0
+	int 21h						;Funktion ausführen

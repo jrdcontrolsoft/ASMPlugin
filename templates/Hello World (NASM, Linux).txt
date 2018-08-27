@@ -1,0 +1,14 @@
+section .data
+section .text
+global _start				;für den Linker (ld) notwendig
+msg	db 'Hello World!',0x0A	;Text inkl. Zeilenumbruch LF(0x0A)
+len	equ $ - msg				;Länge des Textes berechnen (12-Bytes)
+_start:						;Programmstart für Linker
+	mov eax, 4				;Systemaufruf Nr. 4 (sys_write) Textausgabe
+	mov ebx, 1				;Ausgabekanal Nr. 1 = stdout
+	mov ecx, msg			;Adresse unseres Textes im Speicher
+	mov edx, len			;Länge des Textes in Bytes
+	int 0x80				;Kernel aufrufen mit obigen System-Aufrufparametern
+
+	mov eax, 1				;Systemaufruf Nr. 1 (sys_exit) Programmende
+	int 0x80				;Kernel aufrufen mit obigen System-Aufrufparametern

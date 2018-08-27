@@ -1,0 +1,14 @@
+	.MODEL SMALL
+	.STACK 100h
+	.DATA
+
+	.CODE
+Start:	mov ax, @Data
+	mov ds, ax
+
+	; Hier Programmcode einfügen
+
+	mov ax, 4C00h
+	int 21h
+
+	End Start

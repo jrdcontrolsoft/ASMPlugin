@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<toc label="ASM Plug-In">
+  <topic label="Deutsch">
+    <topic label="Einstellungen">
+      <topic label="General" href="doc/de_preferences_general.html" />    
+      <topic label="Kompilierer" href="doc/de_preferences_compiler.html" />
+      <topic label="Linker" href="doc/de_preferences_linker.html" />
+      <topic label="Debugger" href="doc/de_preferences_debugger.html" />
+      <topic label="Schablonen" href="doc/de_preferences_templates.html" />
+    </topic>
+    <topic label="Neues ASM Projekt" href="doc/de_asm_project.html" />
+    <topic label="Neues ASM Datei" href="doc/de_asm_file.html" />
+    <topic label="ASM Editor" href="doc/de_asm_editor.html" />
+    <topic label="Run/Debug Optionen" href="doc/de_run_debug_options.html" />
+    <topic label="ASM Befehle erweitern" href="doc/de_extend_asm_instruction.html" />
+    <topic label="ASM Beispiele erweitern" href="doc/de_extend_asm_examples.html" />
+    <topic label="&#x00DC;ber..." href="doc/de_about.html" />
+  </topic>
+  <topic label="English">
+    <topic label="Preferences">
+      <topic label="General" href="doc/en_preferences_general.html" />
+      <topic label="Compiler" href="doc/en_preferences_compiler.html" />
+      <topic label="Linker" href="doc/en_preferences_linker.html" />
+      <topic label="Debugger" href="doc/en_preferences_debugger.html" />
+      <topic label="Templates" href="doc/en_preferences_templates.html" />
+    </topic>
+    <topic label="New ASM Project" href="doc/en_asm_project.html" />
+    <topic label="New ASM File" href="doc/en_asm_file.html" />
+    <topic label="ASM Editor" href="doc/en_asm_editor.html" />
+    <topic label="Run/Debug Options" href="doc/en_run_debug_options.html" />
+    <topic label="Extend ASM instructions" href="doc/en_extend_asm_instruction.html" />
+    <topic label="Extend ASM examples" href="doc/en_extend_asm_examples.html" />
+    <topic label="About..." href="doc/en_about.html" />
+  </topic>
+</toc>

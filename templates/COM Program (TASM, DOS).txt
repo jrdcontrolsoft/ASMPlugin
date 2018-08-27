@@ -1,0 +1,11 @@
+	.MODEL TINY
+	.CODE
+	Org 100h
+
+Start:
+	; Hier Programmcode einfügen
+
+	mov ax, 4C00h
+	int 21h
+
+	End Start

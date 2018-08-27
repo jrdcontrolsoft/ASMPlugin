@@ -1,0 +1,9 @@
+section .data
+
+section .text
+global _start
+_start:
+	; Hier Programmcode einfügen
+
+	mov eax, 1
+	int 0x80

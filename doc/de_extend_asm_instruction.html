@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+	<title>ASM Plug-In - ASM Befehle erweitern</title>
+  <link rel="stylesheet"" type="text/css" href="help.css">
+ </head>
+ <body>
+  <h2>
+   ASM Plug-In - ASM Befehle erweitern
+  </h2>
+  <hr noshade size="1" style="color: #000000; height: 1px; border: 1px solid #CCCCCC">
+  <p>
+   Sie haben die möglichkeit weitere ASM Befehle zu ergänzen. Wechseln Sie dazu in das ASM Plug-In-Verzeichnis <nobr>([ECLIPSE-INSTALLATIONSVERZEICHNIS]\plugins\de.fh_zwickau.asmplugin_1.0.0).</nobr> Dort befindet sich die Datei: asm_instruction_set.xml . Diese XML Datei enthählt alle vom System verwendeten Befehle.
+  </p>
+  <u>Auszug aus der asm_instruction_set.xml :</u><br>
+  <pre>
+&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+&lt;sets&gt;
+  &lt;instruction command="AAA" description="ASCII Adjust after Addition" /&gt;
+  &lt;instruction command="AAD" description="ASCII Adjust AX before Division" /&gt;
+  &lt;instruction command="AAM" description="ASCII adjust alter multiply" /&gt;
+  &lt;segment field=".DATA" description="Assembler directive that defines program variables." /&gt;
+  &lt;segment field=".CODE" description="Assembler directive that defines the program instructions." /&gt;
+  </pre>
+ </body>
+</html>

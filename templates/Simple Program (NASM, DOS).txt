@@ -1,0 +1,17 @@
+section .stack stack
+	resb 0100h
+	stacktop:
+section .data
+
+section .code
+..start:
+	mov ax, data
+	mov ds, ax
+	mov ax, stack
+	mov ss, ax
+	mov sp, stacktop
+
+	; Hier Programmcode einfügen
+
+	mov ax, 4C00h
+	int 21h

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sets>
+  <instruction command="AAA" description="ASCII Adjust after Addition" />
+  <instruction command="AAD" description="ASCII Adjust AX before Division" />
+  <instruction command="AAM" description="ASCII adjust alter multiply" />
+  <instruction command="AAS" description="ASCII adjust after subtract" />
+  <instruction command="ADC" description="Add with carry" />
+  <instruction command="ADD" description="Add" />
+  <instruction command="ADDPS" description="Packed Single-FP Add" />
+  <instruction command="ADDSS" description="Scalar Single-FP Add" />
+  <instruction command="AND" description="And" />
+  <instruction command="ANDNPS" description="Bit-wise logical and not for Single-FP" />
+  <instruction command="ANDPS" description="Bit-wise logical and for Single-FP" />
+  <instruction command="ARPL" description="Adjust RPL Field of Segment Selector" />
+  <instruction command="BOUND" description="Check Array Index against Bounds" />
+  <instruction command="BSF" description="Bit Scan forward" />
+  <instruction command="BSR" description="Bit Scan reverse" />
+  <instruction command="BSWAP" description="Byte Swap" />
+  <instruction command="BT" description="Bit Test" />
+  <instruction command="BTC" description="Bit Test and Complement" />
+  <instruction command="BTR" description="Bit Test and Reset" />
+  <instruction command="BTS" description="Bit Test and Set" />
+  <instruction command="CALL" description="Call" />
+  <instruction command="CBW" description="Convert byte to word" />
+  <instruction command="CDQ" description="Convert Double to Quad" />
+  <instruction command="CLC" description="Clear Carry Flag" />
+  <instruction command="CLD" description="Clear direction flag" />
+  <instruction command="CLI" description="Clear Interrupt Flag" />
+  <instruction command="CLTS" description="Clear Task-Switched Flag in CR0" />
+  <instruction command="CMC" description="Complement carry flag" />
+  <instruction command="CMOV" description="Conditional Move" />
+  <instruction command="CMOVCC" description="Conditional Move" />
+  <instruction command="CMP" description="Compare" />
+  <instruction command="CMPPS" description="Packed Single-FP Compare" />
+  <instruction command="CMPS" description="Compare string" />
+  <instruction command="CMPSB" description="Compare string bytewise" />
+  <instruction command="CMPSD" description="Compare String Operands" />
+  <instruction command="CMPSS" description="Scalar Single-FP Compare" />
+  <instruction command="CMPSW" description="Compare String Operands" />
+  <instruction command="CMPXCHG" description="Compare and Exchange" />
+  <instruction command="CMPXCHG8B" description="Compare and Exchange 8 Bytes" />
+  <instruction command="COMISS" description="Scalar Ordered Single-FP Compare and Set EFLAGS" />
+  <instruction command="CPUID" description="CPU Identification" />
+  <instruction command="CVTPI2PS" description="Packed Signed INT32 to Packed Single-FP Conversion" />
+  <instruction command="CVTPS2PI" description="Packed Single-FP to Packed INT32 Conversion" />
+  <instruction command="CVTSI2SS" description="Scalar Signed INT32 to Single-FP Conversion" />
+  <instruction command="CVTSS2SI" description="Scalar Single-FP to Signed INT32 Conversion" />
+  <instruction command="CVTTPS2PI" description="Packed Single-FP to Packed INT32 Conversion (Truncate)" />
+  <instruction command="CVTTSS2SI" description="Scalar Single-FP to Signed INT32 Conversion (Truncate)" />
+  <instruction command="CWD" description="Convert word to double word" />
+  <instruction command="CWDE" description="Convert Byte to Word/Convert Word to Doubleword" />
+  <instruction command="DAA" description="Decimal adjust after addition" />
+  <instruction command="DAS" description="Decimal adjust after subtract" />
+  <instruction command="DEC" description="Decrement" />
+  <instruction command="DIV" description="Divide (unsigned)" />
+  <instruction command="DIVPS" description="Packed Single-FP Divide" />
+  <instruction command="DIVSS" description="Scalar Single-FP Divide" />
+  <instruction command="EMMS" description="Empty MMX State" />
+  <instruction command="ENTER" description="Make Stack Frame for Procedure Parameters" />
+  <instruction command="ESC" description="Escape (to external device)" />
+  <instruction command="F2XM1" description="Compute 2x&#x2013;1" />
+  <instruction command="FABS" description="Absolute Value" />
+  <instruction command="FADD" description="Add" />
+  <instruction command="FADDP" description="Add" />
+  <instruction command="FBLD" description="Load Binary Coded Decimal" />
+  <instruction command="FBSTP" description="Store BCD Integer and Pop" />
+  <instruction command="FCHS" description="Change Sign" />
+  <instruction command="FCLEX" description="Clear Exceptions" />
+  <instruction command="FCMOV" description="Floating-Point Conditional Move" />
+  <instruction command="FCOM" description="Compare Real" />
+  <instruction command="FCOMI" description="Compare Real and Set EFLAGS" />
+  <instruction command="FCOMIP" description="Compare Real and Set EFLAGS" />
+  <instruction command="FCOMP" description="Compare Real" />
+  <instruction command="FCOMPP" description="Compare Real" />
+  <instruction command="FCOS" description="Cosine" />
+  <instruction command="FDECSTP" description="Decrement Stack-Top Pointer" />
+  <instruction command="FDIV" description="Divide" />
+  <instruction command="FDIVP" description="Divide" />
+  <instruction command="FDIVR" description="Reverse Divide" />
+  <instruction command="FDIVRP" description="Reverse Divide" />
+  <instruction command="FFREE" description="Free Floating-Point Register" />
+  <instruction command="FIADD" description="Add" />
+  <instruction command="FICOM" description="Compare Integer" />
+  <instruction command="FICOMP" description="Compare Integer" />
+  <instruction command="FIDIV" description="Divide" />
+  <instruction command="FIDIVR" description="Reverse Divide" />
+  <instruction command="FILD" description="Load Integer" />
+  <instruction command="FIMUL" description="Multiply" />
+  <instruction command="FINCSTP" description="Increment Stack-Top Pointer" />
+  <instruction command="FINIT" description="Initialize Floating-Point Unit" />
+  <instruction command="FIST" description="Store Integer" />
+  <instruction command="FISTP" description="Store Integer" />
+  <instruction command="FISUB" description="Subtract" />
+  <instruction command="FISUBR" description="Reverse Subtract" />
+  <instruction command="FLD" description="Load Real" />
+  <instruction command="FLD1" description="Load Constant" />
+  <instruction command="FLDCW" description="Load Control Word" />
+  <instruction command="FLDENV" description="Load FPUEnvironment" />
+  <instruction command="FLDL2E" description="Load Constant" />
+  <instruction command="FLDL2T" description="Load Constant" />
+  <instruction command="FLDLG2" description="Load Constant" />
+  <instruction command="FLDLN2" description="Load Constant" />
+  <instruction command="FLDPI" description="Load Constant" />
+  <instruction command="FLDZ" description="Load Constant" />
+  <instruction command="FMUL" description="Multiply" />
+  <instruction command="FMULP" description="Multiply" />
+  <instruction command="FNCLEX" description="Clear Exceptions" />
+  <instruction command="FNINIT" description="Initialize Floating-Point Unit" />
+  <instruction command="FNOP" description="No Operation" />
+  <instruction command="FNSAVE" description="Store FPUState" />
+  <instruction command="FNSTCW" description="Store Control Word" />
+  <instruction command="FNSTENV" description="Store FPU Environment" />
+  <instruction command="FNSTSW" description="Store Status Word" />
+  <instruction command="FPATAN" description="Partial Arctangent" />
+  <instruction command="FPREM" description="Partial Remainder" />
+  <instruction command="FPREM1" description="Partial Remainder" />
+  <instruction command="FPTAN" description="Partial Tangent" />
+  <instruction command="FRNDINT" description="Round to Integer" />
+  <instruction command="FRSTOR" description="Restore FPU State" />
+  <instruction command="FSAVE" description="Store FPUState" />
+  <instruction command="FSCALE" description="Scale" />
+  <instruction command="FSIN" description="Sine" />
+  <instruction command="FSINCOS" description="Sine and Cosine" />
+  <instruction command="FSQRT" description="Square Root" />
+  <instruction command="FST" description="Store Real" />
+  <instruction command="FSTCW" description="Store Control Word" />
+  <instruction command="FSTENV" description="Store FPU Environment" />
+  <instruction command="FSTP" description="Store Real" />
+  <instruction command="FSTSW" description="Store Status Word" />
+  <instruction command="FSUB" description="Subtract" />
+  <instruction command="FSUBP" description="Subtract" />
+  <instruction command="FSUBR" description="Reverse Subtract" />
+  <instruction command="FSUBRP" description="Reverse Subtract" />
+  <instruction command="FTST" description="TEST" />
+  <instruction command="FUCOM" description="Unordered Compare Real" />
+  <instruction command="FUCOMI" description="Compare Real and Set EFLAGS" />
+  <instruction command="FUCOMIP" description="Compare Real and Set EFLAGS" />
+  <instruction command="FUCOMP" description="Unordered Compare Real" />
+  <instruction command="FUCOMPP" description="Unordered Compare Real" />
+  <instruction command="FWAIT" description="Wait" />
+  <instruction command="FXAM" description="Examine" />
+  <instruction command="FXCH" description="Exchange Register Contents" />
+  <instruction command="FXRSTOR" description="Restore FP and MMX State and Streaming SIMD Extension State" />
+  <instruction command="FXSAVE" description="Store FP and MMX State and Streaming SIMD Extension State" />
+  <instruction command="FXTRACT" description="Extract Exponent and Significand" />
+  <instruction command="FYL2X" description="Compute y * log2x" />
+  <instruction command="FYL2XP1" description="Compute y * log2(x +1)" />
+  <instruction command="HLT" description="Halt" />
+  <instruction command="IDIV" description="Integer divide (signed)" />
+  <instruction command="IMUL" description="Integer multiply (signed)" />
+  <instruction command="IN" description="Input from" />
+  <instruction command="INC" description="Increment" />
+  <instruction command="INS" description="Input from Port to String" />
+  <instruction command="INSB" description="Input from Port to String" />
+  <instruction command="INSD" description="Input from Port to String" />
+  <instruction command="INSW" description="Input from Port to String" />
+  <instruction command="INT" description="Call to Interrupt Procedure" />
+  <instruction command="INTO" description="Call to Interrupt Procedure" />
+  <instruction command="INVD" description="Invalidate Internal Caches" />
+  <instruction command="INVLPG" description="Invalidate TLB Entry" />
+  <instruction command="IRET" description="Interrupt Return" />
+  <instruction command="IRETD" description="Interrupt Return" />
+  <instruction command="J" description="Jump if Condition is Met" />
+  <instruction command="JA" description="Jump if above" />
+  <instruction command="JAE" description="Jump if above or equal" />
+  <instruction command="JB" description="Jump if below" />
+  <instruction command="JBE" description="Jump if below or equal" />
+  <instruction command="JCC" description="Jump if Condition is Met" />
+  <instruction command="JCXZ" description="Jump if CX equal zero" />
+  <instruction command="JE" description="Jump if equal" />
+  <instruction command="JG" description="Jump if greater" />
+  <instruction command="JGE" description="Jump if greater or equal" />
+  <instruction command="JL" description="Jump if less" />
+  <instruction command="JLE" description="Jump if less or equal" />
+  <instruction command="JMP" description="Jump" />
+  <instruction command="JNA" description="Jump if not above" />
+  <instruction command="JNAE" description="Jump if not above and not equal" />
+  <instruction command="JNB" description="Jump if not below" />
+  <instruction command="JNBE" description="Jump if not below and not equal" />
+  <instruction command="JNE" description="Jump if not equal" />
+  <instruction command="JNG" description="Jump if not greater" />
+  <instruction command="JNGE" description="Jump if not greater and not equal" />
+  <instruction command="JNL" description="Jump if not less" />
+  <instruction command="JNLE" description="Jump if not less and not equal" />
+  <instruction command="JNO" description="Jump if no overflow" />
+  <instruction command="JNP" description="Jump if no parity" />
+  <instruction command="JNS" description="Jump if no sign" />
+  <instruction command="JNZ" description="Jump if not zero" />
+  <instruction command="JO" description="Jump if overflow" />
+  <instruction command="JP" description="Jump if parity" />
+  <instruction command="JPE" description="Jump if parity even" />
+  <instruction command="JPO" description="Jump if parity odd" />
+  <instruction command="JS" description="Jump if sign" />
+  <instruction command="JZ" description="Jump if zero" />
+  <instruction command="LAHF" description="Load AH with flags" />
+  <instruction command="LAR" description="Load Access Rights Byte" />
+  <instruction command="LDMXCSR" description="Load Streaming SIMD Extension Control/Status" />
+  <instruction command="LDS" description="Load Far Pointer" />
+  <instruction command="LEA" description="Load Effective Address" />
+  <instruction command="LEAVE" description="High Level Procedure Exit" />
+  <instruction command="LES" description="Load Far Pointer" />
+  <instruction command="LFS" description="Load Far Pointer" />
+  <instruction command="LGDT" description="Load Global/Interrupt Descriptor Table Register" />
+  <instruction command="LGS" description="Load Far Pointer" />
+  <instruction command="LIDT" description="Load Global/Interrupt Descriptor Table Register" />
+  <instruction command="LLDT" description="Load Local Descriptor Table Register" />
+  <instruction command="LMSW" description="Load Machine Status Word" />
+  <instruction command="LOCK" description="Assert LOCK# Signal Prefix" />
+  <instruction command="LODS" description="Load String" />
+  <instruction command="LODSB" description="Load String" />
+  <instruction command="LODSD" description="Load String" />
+  <instruction command="LODSW" description="Load String" />
+  <instruction command="LOOP" description="Loop According to ECX Counter" />
+  <instruction command="LOOPCC" description="Loop According to ECX Counter" />
+  <instruction command="LOOPE" description="Loop CX times while equal" />
+  <instruction command="LOOPNE" description="Loop CX times while not equal" />
+  <instruction command="LOOPNZ" description="Loop CX times while not zero" />
+  <instruction command="LOOPZ" description="Loop CX times while zero" />
+  <instruction command="LSL" description="Load Segment Limit" />
+  <instruction command="LSS" description="Load Far Pointer" />
+  <instruction command="LTR" description="Load Task Register" />
+  <instruction command="MASKMOVQ" description="Byte Mask Write" />
+  <instruction command="MAXPS" description="Packed Single-FP Maximum" />
+  <instruction command="MAXSS" description="Scalar Single-FP Maximum" />
+  <instruction command="MINPS" description="Packed Single-FP Minimum" />
+  <instruction command="MINSS" description="Scalar Single-FP Minimum" />
+  <instruction command="MOV" description="Move" />
+  <instruction command="MOVAPS" description="Move Aligned Four Packed Single-FP" />
+  <instruction command="MOVD" description="Move 32 Bits" />
+  <instruction command="MOVHLPS" description="High to Low Packed Single-FP" />
+  <instruction command="MOVHPS" description="Move High Packed Single-FP" />
+  <instruction command="MOVLHPS" description="Move Low to High Packed Single-FP" />
+  <instruction command="MOVLPS" description="Move Low Packed Single-FP" />
+  <instruction command="MOVMSKPS" description="Move MaskTo Integer" />
+  <instruction command="MOVNTPS" description="Move Aligned Four Packed Single-FP Non Temporal" />
+  <instruction command="MOVNTQ" description="Move 64 Bits Non Temporal" />
+  <instruction command="MOVQ" description="Move 64 Bits" />
+  <instruction command="MOVS" description="Move Data from String to String" />
+  <instruction command="MOVSB" description="Move Data from String to String" />
+  <instruction command="MOVSD" description="Move Data from String to String" />
+  <instruction command="MOVSS" description="Move Scalar Single-FP" />
+  <instruction command="MOVSW" description="Move Data from String to String" />
+  <instruction command="MOVSX" description="Move with Sign-Extension" />
+  <instruction command="MOVUPS" description="Move Unaligned Four Packed Single-FP" />
+  <instruction command="MOVZX" description="Move with Zero-Extend" />
+  <instruction command="MUL" description="Muliply (unsigned)" />
+  <instruction command="MULPS" description="Packed Single-FP Multiply" />
+  <instruction command="MULSS" description="Scalar Single-FP Multiply" />
+  <instruction command="NEG" description="Negate" />
+  <instruction command="NOP" description="No Operation" />
+  <instruction command="NOT" description="Invert" />
+  <instruction command="OR" description="Logical InclusiveOR" />
+  <instruction command="ORPS" description="Bit-wise Logical OR for Single-FP Data" />
+  <instruction command="OUT" description="Output to" />
+  <instruction command="OUTS" description="Output String to Port" />
+  <instruction command="OUTSB" description="Output String to Port" />
+  <instruction command="OUTSD" description="Output String to Port" />
+  <instruction command="OUTSW" description="Output String to Port" />
+  <instruction command="PACKSSDW" description="Pack with Signed Saturation" />
+  <instruction command="PACKSSWB" description="Pack with Signed Saturation" />
+  <instruction command="PACKUSWB" description="Pack with Unsigned Saturation" />
+  <instruction command="PADDB" description="Packed Add" />
+  <instruction command="PADDD" description="Packed Add" />
+  <instruction command="PADDSB" description="Packed Add with Saturation" />
+  <instruction command="PADDSW" description="Packed Add with Saturation" />
+  <instruction command="PADDUSB" description="Packed Add Unsigned with Saturation" />
+  <instruction command="PADDUSW" description="Packed Add Unsigned with Saturation" />
+  <instruction command="PADDW" description="Packed Add" />
+  <instruction command="PAND" description="Logical AND" />
+  <instruction command="PANDN" description="Logical AND NOT" />
+  <instruction command="PAVGB" description="Packed Average" />
+  <instruction command="PAVGW" description="Packed Average" />
+  <instruction command="PCMPEQB" description="Packed Compare for Equal" />
+  <instruction command="PCMPEQD" description="Packed Compare for Equal" />
+  <instruction command="PCMPEQW" description="Packed Compare for Equal" />
+  <instruction command="PCMPGTB" description="Packed Compare for Greater Than" />
+  <instruction command="PCMPGTD" description="Packed Compare for Greater Than" />
+  <instruction command="PCMPGTW" description="Packed Compare for Greater Than" />
+  <instruction command="PEXTRW" description="Extract Word" />
+  <instruction command="PINSRW" description="Insert Word" />
+  <instruction command="PMADDWD" description="Packed Multiply and Add" />
+  <instruction command="PMAXSW" description="Packed Signed Integer Word Maximum" />
+  <instruction command="PMAXUB" description="Packed Unsigned Integer Byte Maximum" />
+  <instruction command="PMINSW" description="Packed Signed Integer Word Minimum" />
+  <instruction command="PMINUB" description="Packed Unsigned Integer Byte Minimum" />
+  <instruction command="PMOVMSKB" description="MoveByte Mask to Integer" />
+  <instruction command="PMULHUW" description="Packed Multiply High Unsigned" />
+  <instruction command="PMULHW" description="Packed Multiply High" />
+  <instruction command="PMULLW" description="Packed Multiply Low" />
+  <instruction command="POP" description="Pop" />
+  <instruction command="POPA" description="Pop all General-Purpose Registers" />
+  <instruction command="POPAD" description="Pop all General-Purpose Registers" />
+  <instruction command="POPF" description="Pop flags" />
+  <instruction command="POPFD" description="Pop Stack into EFLAGS Register" />
+  <instruction command="POR" description="Bitwise Logical OR" />
+  <instruction command="PREFETCH" description="Prefetch" />
+  <instruction command="PSADBW" description="Packed Sum of Absolute Differences" />
+  <instruction command="PSHUFW" description="Packed Shuffle Word" />
+  <instruction command="PSLLD" description="Packed Shift Left Logical" />
+  <instruction command="PSLLQ" description="Packed Shift Left Logical" />
+  <instruction command="PSLLW" description="Packed Shift Left Logical" />
+  <instruction command="PSRAD" description="Packed Shift Right Arithmetic" />
+  <instruction command="PSRAW" description="Packed Shift Right Arithmetic" />
+  <instruction command="PSRLD" description="Packed Shift Right Logical" />
+  <instruction command="PSRLQ" description="Packed Shift Right Logical" />
+  <instruction command="PSRLW" description="Packed Shift Right Logical" />
+  <instruction command="PSUBB" description="Packed Subtract" />
+  <instruction command="PSUBD" description="Packed Subtract" />
+  <instruction command="PSUBSB" description="Packed Subtract with Saturation" />
+  <instruction command="PSUBSW" description="Packed Subtract with Saturation" />
+  <instruction command="PSUBUSB" description="Packed Subtract Unsigned with Saturation" />
+  <instruction command="PSUBUSW" description="Packed Subtract Unsigned with Saturation" />
+  <instruction command="PSUBW" description="Packed Subtract" />
+  <instruction command="PUNPCKHBW" description="Unpack High Packed Data" />
+  <instruction command="PUNPCKHDQ" description="Unpack High Packed Data" />
+  <instruction command="PUNPCKHWD" description="Unpack High Packed Data" />
+  <instruction command="PUNPCKLBW" description="Unpack Low Packed Data" />
+  <instruction command="PUNPCKLDQ" description="Unpack Low Packed Data" />
+  <instruction command="PUNPCKLWD" description="Unpack Low Packed Data" />
+  <instruction command="PUSH" description="Push" />
+  <instruction command="PUSHA" description="Push all General-Purpose Registers" />
+  <instruction command="PUSHAD" description="Push all General-Purpose Registers" />
+  <instruction command="PUSHF" description="Push EFLAGS Register onto the Stack" />
+  <instruction command="PUSHFD" description="Push EFLAGS Register onto the Stack" />
+  <instruction command="PXOR" description="Logical Exclusive OR" />
+  <instruction command="RCL" description="Rotate" />
+  <instruction command="RCPPS" description="Packed Single-FP Reciprocal" />
+  <instruction command="RCPSS" description="Scalar Single-FP Reciprocal" />
+  <instruction command="RCR" description="Rotate" />
+  <instruction command="RDMSR" description="Read from Model Specific Register" />
+  <instruction command="RDPMC" description="Read Performance-Monitoring Counters" />
+  <instruction command="RDTSC" description="Read Time-Stamp Counter" />
+  <instruction command="REP" description="Repeat CX times" />
+  <instruction command="REPE" description="Repeat CX times while equal" />
+  <instruction command="REPNE" description="Repeat CX times while not equal" />
+  <instruction command="REPNZ" description="Repeat CX times while not zero" />
+  <instruction command="REPZ" description="Repeat CX times while zero" />
+  <instruction command="RET" description="Return from Procedure" />
+  <instruction command="ROL" description="Rotate" />
+  <instruction command="ROR" description="Rotate" />
+  <instruction command="RSM" description="Resume from System Management Mode" />
+  <instruction command="RSQRTPS" description="Packed Single-FP Square Root Reciprocal" />
+  <instruction command="RSQRTSS" description="Scalar Single-FP Square Root Reciprocal" />
+  <instruction command="SAHF" description="Store AH into Flags" />
+  <instruction command="SAL" description="Shift arithmetic left" />
+  <instruction command="SAR" description="Shift arithmetic right" />
+  <instruction command="SBB" description="Integer Subtraction with Borrow" />
+  <instruction command="SCAS" description="Scan String" />
+  <instruction command="SCASB" description="Scan String" />
+  <instruction command="SCASD" description="Scan String" />
+  <instruction command="SCASW" description="Scan String" />
+  <instruction command="SET" description="Set Byte on Condition" />
+  <instruction command="SETCC" description="Set Byte on Condition" />
+  <instruction command="SFENCE" description="Store Fence" />
+  <instruction command="SGDT" description="Store Global/Interrupt Descriptor Table Register" />
+  <instruction command="SHL" description="Shift Left" />
+  <instruction command="SHLD" description="Double Precision Shift Left" />
+  <instruction command="SHR" description="Shift logical right" />
+  <instruction command="SHRD" description="Double Precision Shift Right" />
+  <instruction command="SHUFPS" description="Shuffle Single-FP" />
+  <instruction command="SIDT" description="Store Global/Interrupt Descriptor Table Register" />
+  <instruction command="SLDT" description="Store Local Descriptor Table Register" />
+  <instruction command="SMSW" description="Store Machine Status Word" />
+  <instruction command="SQRTPS" description="Packed Single-FP Square Root" />
+  <instruction command="SQRTSS" description="Scalar Single-FP Square Root" />
+  <instruction command="STC" description="Set carry flag" />
+  <instruction command="STD" description="Set Direction Flag" />
+  <instruction command="STI" description="Set Interrupt Flag" />
+  <instruction command="STMXCSR" description="Store Streaming SIMD Extension Control/Status" />
+  <instruction command="STOS" description="Store String" />
+  <instruction command="STOSB" description="Store String" />
+  <instruction command="STOSD" description="Store String" />
+  <instruction command="STOSW" description="Store String" />
+  <instruction command="STR" description="Store Task Register" />
+  <instruction command="SUB" description="Subtract" />
+  <instruction command="SUBPS" description="Packed Single-FP Subtract" />
+  <instruction command="SUBSS" description="Scalar Single-FP Subtract" />
+  <instruction command="SYSENTER" description="Fast Transition to System Call Entry Point" />
+  <instruction command="SYSEXIT" description="Fast Transition from System Call Entry Point" />
+  <instruction command="TEST" description="Logical Compare" />
+  <instruction command="UCOMISS" description="Unordered Scalar Single-FP compare and set EFLAGS" />
+  <instruction command="UD2" description="Undefined Instruction" />
+  <instruction command="UNPCKHPS" description="Unpack High Packed Single-FP Data" />
+  <instruction command="UNPCKLPS" description="Unpack Low Packed Single-FP Data" />
+  <instruction command="VERR" description="Verify a Segment for Reading" />
+  <instruction command="VERW" description="Verify a Segment for Writing" />
+  <instruction command="WAIT" description="Wait" />
+  <instruction command="WBINVD" description="Write Back and Invalidate Cache" />
+  <instruction command="WRMSR" description="Write to Model Specific Register" />
+  <instruction command="XADD" description="Exchange and Add" />
+  <instruction command="XCHG" description="Exchange" />
+  <instruction command="XLAT" description="Table Look-up Translation" />
+  <instruction command="XLATB" description="Table Look-up Translation" />
+  <instruction command="XOR" description="Exclusive or" />
+  <instruction command="XORPS" description="Bit-wise Logical XOR for Single-FP Data" />
+  <instruction command="proc" description="Procedure begin" />
+  <instruction command="endp" description="Procedure end" />
+  <instruction command="macro" description="Macro begin" />
+  <instruction command="endm" description="Macro end" />
+  <segment field=".STACK" description="Assembler directive that reserves a memory space for program instructions" />
+  <segment field=".DATA" description="Assembler directive that defines program variables." />
+  <segment field=".CODE" description="Assembler directive that defines the program instructions." />
+  <segment field=".TEXT" description="Assembler directive that defines the program instructions." />
+  <segment field=".MODEL" description="Assembler directive that defines the memory model to use in the program." />
+</sets>
+
